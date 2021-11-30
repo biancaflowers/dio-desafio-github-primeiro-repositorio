@@ -1,0 +1,41 @@
+package model;
+
+public class Professor extends Pessoa {
+	
+	private String matricula;
+	private String seguimento;
+	
+	
+	public Professor() {
+		super();
+	}
+
+
+	public Professor(String nome, String rg, String cpf, String telefone, String email, String matricula,
+			String seguimento) {
+		super(nome, rg, cpf, telefone, email);
+		this.matricula = matricula;
+		this.seguimento = seguimento;
+	}
+
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+
+	public String getSeguimento() {
+		return seguimento;
+	}
+
+
+	public void setSeguimento(String seguimento) {
+		this.seguimento = seguimento;
+	}
+	
+}
